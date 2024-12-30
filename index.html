@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Achievement</title>
+    
+ <style>
+    body {
+        background-color: black;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    .award {
+        width: 90%; /* Use percentage for better responsiveness */
+        max-width: 400px; /* Limit the maximum size */
+        height: auto; /* Maintain aspect ratio */
+        transition: 2s;
+        box-shadow: -5px -5px 30px aqua, 5px 5px 30px red;
+    }
+
+    .award:hover {
+        transform: scale(2); /* Slightly reduce scale for mobile usability */
+        box-shadow: -5px -5px 30px red, 5px 5px 30px aqua;
+    }
+
+    @media (max-width: 768px) {
+        .award {
+            width: 80%; /* Adjust for smaller screens */
+        }
+    }
+
+    @media (max-width: 480px) {
+        .award {
+            width: 70%; /* Further adjust for very small screens */
+        }
+    }
+</style>
+
+</head>
+
+<body>
+
+
+    <div class="div">
+        <img class="award" src="Achievement.png" alt="This is Python FullStack Certificate">
+
+    </div>
+</body>
+
+</html>
